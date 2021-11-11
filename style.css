@@ -56,6 +56,10 @@ html {
   box-shadow: var(--shadow); 
 }
 
+.box:hover {
+  box-shadow: var(--shadowInset);
+}
+
 .box-circle {
   width: 10vw;
   height: 10vw;
@@ -103,3 +107,6 @@ html {
   box-shadow: var(--shadowInset); 
 }
 
+.box-circle-outline:hover::before, .box-square-outline:hover::before {
+  box-shadow: var(--shadow); 
+}
