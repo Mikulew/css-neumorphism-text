@@ -1,9 +1,8 @@
 :root {
   --backgroundColor: #242424;
-  --shadow: 3px 3px 3px rgba(0, 0, 0, .8),
-            -3px -3px 3px rgb(216, 194, 30, 1);
-  --shadowInset: inset 3px 3px 3px rgba(0, 0, 0, .8),
-                inset -3px -3px 3px rgb(216, 194, 30, 1);
+  --shadow: 3px 3px 3px rgba(0, 0, 0, 0.8), -3px -3px 3px rgb(216, 194, 30, 1);
+  --shadowInset: inset 3px 3px 3px rgba(0, 0, 0, 0.8),
+    inset -3px -3px 3px rgb(216, 194, 30, 1);
 }
 
 html {
@@ -15,7 +14,9 @@ html {
   background: var(--backgroundColor);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   font-size: inherit;
   font-family: inherit;
   box-sizing: inherit;
@@ -53,7 +54,7 @@ html {
 }
 
 .box {
-  box-shadow: var(--shadow); 
+  box-shadow: var(--shadow);
 }
 
 .box:hover {
@@ -82,7 +83,7 @@ html {
   width: 5vw;
   height: 5vw;
   border-radius: 50%;
-  box-shadow: var(--shadowInset); 
+  box-shadow: var(--shadowInset);
 }
 
 .box-square {
@@ -104,9 +105,10 @@ html {
   transform: translate(-50%, -50%);
   width: 5vw;
   height: 5vw;
-  box-shadow: var(--shadowInset); 
+  box-shadow: var(--shadowInset);
 }
 
-.box-circle-outline:hover::before, .box-square-outline:hover::before {
-  box-shadow: var(--shadow); 
+.box-circle-outline:hover::before,
+.box-square-outline:hover::before {
+  box-shadow: var(--shadow);
 }
